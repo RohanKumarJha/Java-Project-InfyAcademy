@@ -25,7 +25,7 @@ public class CandidateServiceImpl implements CandidateService {
 
 	@Override
 	public String calculateGrade(CandidateReport candidateReportTO) {
-		if(candidateReportTO.getResult().equals('F')) return "NA";
+		if(candidateReportTO.getResult().equals("F")) return "NA";
 		int avg = (candidateReportTO.getMark1()+candidateReportTO.getMark2()+candidateReportTO.getMark3())/3;
 		if(avg >= 85) return "A";
 		else if(avg >= 75) return "B";

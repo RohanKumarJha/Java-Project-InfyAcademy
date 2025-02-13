@@ -11,7 +11,7 @@ public class Candidate {
 	private Character result;
 	private String department;
 	private LocalDate examDate;
-	
+
 	public Candidate(Integer candidateId, String candidateName, Integer mark1, Integer mark2, Integer mark3,
 			Character result, String department, LocalDate examDate) {
 		super();

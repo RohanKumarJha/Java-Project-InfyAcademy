@@ -9,6 +9,17 @@ public class CandidateReport {
 	private Character result;
 	private String grade;
 	
+	public CandidateReport(String candidateName, Integer mark1, Integer mark2, Integer mark3, Character result,
+			String grade) {
+		super();
+		this.candidateName = candidateName;
+		this.mark1 = mark1;
+		this.mark2 = mark2;
+		this.mark3 = mark3;
+		this.result = result;
+		this.grade = grade;
+	}
+
 	public CandidateReport(Integer candidateId, String candidateName, Integer mark1, Integer mark2, Integer mark3,
 			Character result, String grade) {
 		super();
