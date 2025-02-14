@@ -23,7 +23,6 @@ public class CandidateDAOImpl implements CandidateDAO {
 			String password = "Rishabh@8448";
 			conc = DriverManager.getConnection(url, userName, password);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return conc;
@@ -40,7 +39,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 			prep.setInt(3, candidate.getMark1());
 			prep.setInt(4, candidate.getMark2());
 			prep.setInt(5, candidate.getMark3());
-			prep.setLong(6, candidate.getResult());
+			prep.setString(6, String.valueOf(candidate.getResult()));
 			prep.executeUpdate();
 			prep.close();
 			conc.close();
